@@ -17,7 +17,7 @@ Don't.
 (r/sample
   {:first-name s/Str
    :last-name  s/Str
-   :age        (s/both s/Int (s/pred #(>= % 5)))}
+   :age        (s/both s/Int (s/pred #(>= % 18)))}
   5)
 ;; => ({:first-name "", :last-name "", :age 18}
 ;;     {:first-name "", :last-name "S", :age 23}
