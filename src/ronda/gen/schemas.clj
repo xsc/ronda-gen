@@ -28,4 +28,4 @@
 
   schema.core.Predicate
   (generator* [{:keys [p?]} f]
-    (gen/such-that p? gen/any)))
+    (gen/such-that p? gen/any 250)))

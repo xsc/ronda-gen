@@ -39,4 +39,5 @@
           predicate (make-predicate schemas)]
       (gen/such-that
         #(and (predicate %) (nil? (s/check b %)))
-        gen))))
+        gen
+        100))))
